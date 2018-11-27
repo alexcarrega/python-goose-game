@@ -10,7 +10,7 @@ Goose game is a game where two or more players move pieces around a track by rol
 
 ## Requirements
 
-1. **Python** (follows the instructions at [https://www.python.org/downloads](https://www.python.org/downloads)).
+1. **Python** (version >= **3.6**) (follows the instructions at [https://www.python.org/downloads](https://www.python.org/downloads)).
 
 ## Installation
 
@@ -35,13 +35,13 @@ c:\foo\bar> cd python-goose-game
 ### Linux
 
 ```console
-for@bar:~\python-goose-game$ pip install
+for@bar:~\python-goose-game$ pip3 install cmd2 colorful
 ```
 
 ### Windows
 
 ```console
-c:\foo\bar\python-goose-game> pip install
+c:\foo\bar\python-goose-game> pip3 install cmd2 colorful
 ```
 
 ## Usage
