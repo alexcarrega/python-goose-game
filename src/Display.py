@@ -1,10 +1,6 @@
 import colorful
 
-
-NOT = 'NOT'
-NEW_LINE = '\n'
-ARROW = colorful.cyan('>>>', nested=True)
-
+colorful.update_palette({'cyanLight': '#2aa198'})
 
 def style_info(text):
    return colorful.magenta(f'{text}', nested=True)
@@ -25,10 +21,12 @@ def style_prompt(text):
 def style_text(text):
    return colorful.white(f'{text}', nested=True)
 
-
 def style_highlight(text):
    return colorful.bold(f'{text}', nested=True)
 
+NOT = 'NOT'
+NEW_LINE = '\n'
+ARROW = colorful.cyan('>', nested=True) + colorful.cyanLight('>', nested=True) + style_text('>')
 
 def info(text):
    print(NEW_LINE + style_info(text) + NEW_LINE)
